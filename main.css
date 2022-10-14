@@ -49,7 +49,7 @@ header a{
   justify-content: space-around;
   align-items: center;
   padding: 116px 0;
-  background-image: url(/img/back.png);
+  background-image: url(img/back.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -98,6 +98,7 @@ button{
 .about__sun-image{
   width: 100px;
   height: 100px;
+  padding-bottom: 210px;
 }
 
 /* Блок форма для отправки данных пользователя */
