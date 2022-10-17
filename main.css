@@ -3,36 +3,6 @@ body{
   color: #213053;
   margin: 0;
 }
-
-header{
-  position: sticky;
-  top: 0;
-  background-color: rgb(255, 255, 255);
-  z-index: 1;
-}
-
-button{
-  transition: background-color, color,  ease-in-out;
-  transition-duration: .7s; 
-  transition-delay: .2s;
-}
-
-button:hover{
-  color: #000;
-  background-color: #f6980c;
-  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-  transform: scale(1.1);
-  transition-duration: .4s;
-  transition-delay: .2s;
-}
-
-
-
-
-/* Блок шапка */
-
-
-
 header{
   display: flex;
   justify-content: space-between;
@@ -55,16 +25,12 @@ header a{
   margin-right: 25px;
 }
 
-
-/* Блок информация */
-
-
 .about{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 116px 0;
-  background-image: url(img/back.png);
+  padding: 115px 0;
+  background-image: url(/img/back.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -78,7 +44,6 @@ header a{
   font-size: 18px;
   line-height: 30px;
   opacity: .8;
-  
 }
 
 .about button {
@@ -113,40 +78,8 @@ button{
   position: absolute;
   width: 100px;
   height: 100px;
+  padding-bottom: 210px;
 }
-
-.about__sun-image{
-animation-name: rotate-sun;
-animation-timing-function: linear;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-}
-
-@keyframes rotate-sun{
-  0%{
-    transform: rotate(0deg);
-  }
-    100%{
-      transform: rotate(360deg);
-    }
-}
-
-.fa-solid{
-  padding-left: 8px;
-}
-
-.animate__animated.animate__fadeInRight{
-  animation-duration: 2.3s;
-}
-
-.animate__animated.animate__fadeInLeft{
-  animation-duration: 2.3s;
-}
-
-
-
-
 
 /* Блок форма для отправки данных пользователя */
 
@@ -207,53 +140,4 @@ label{
   font-weight: 600;
   margin-top: 40px;
   cursor: pointer;
-}
-
-select{
-  appearance: none;
-}
-
-input{
-  outline: none;
-}
-
-/* Подвал лендинга сайта */
-
-footer{
-  padding: 90px 20px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.footer__container{
-  display: flex;
-  justify-content: center;
-}
-
-.footer__copyright{
-  padding-top: 40px;
-  text-align: center;
-  opacity: .5;
-}
-
-.footer__group{
-  margin-right: 80px;
-  
-}
-
-.footer__group h3{
-  margin-bottom: 30px;
-  font-size: 16px;
-  opacity: .7;
-}
-
-.footer__links{
-  display:flex ;
-  flex-direction: column;
-}
-
-.footer__links a{
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: #133175;
 }
