@@ -4,8 +4,8 @@ body{
   margin: 0;
 }
 
-/* Блок шапка */
 
+/* Блок шапка */
 
 
 header{
@@ -34,16 +34,12 @@ header a{
   margin-right: 25px;
 }
 
-
-/* Блок информация */
-
-
 .about{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 116px 0;
-  background-image: url(img/back.png);
+  padding: 115px 0;
+  background-image: url(/img/back.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -57,7 +53,6 @@ header a{
   font-size: 18px;
   line-height: 30px;
   opacity: .8;
-  
 }
 
 .about button {
@@ -103,6 +98,7 @@ button:hover{
   position: absolute;
   width: 100px;
   height: 100px;
+
 }
 
 .about__sun-image{
@@ -135,10 +131,8 @@ animation-direction: alternate;
 }
 
 
-
-
-
 /* Блок форма для отправки данных пользователя */
+
 
 .form__conteiner{
   width: 550px;
@@ -197,53 +191,4 @@ label{
   font-weight: 600;
   margin-top: 40px;
   cursor: pointer;
-}
-
-select{
-  appearance: none;
-}
-
-input{
-  outline: none;
-}
-
-/* Подвал лендинга сайта */
-
-footer{
-  padding: 90px 20px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.footer__container{
-  display: flex;
-  justify-content: center;
-}
-
-.footer__copyright{
-  padding-top: 40px;
-  text-align: center;
-  opacity: .5;
-}
-
-.footer__group{
-  margin-right: 80px;
-  
-}
-
-.footer__group h3{
-  margin-bottom: 30px;
-  font-size: 16px;
-  opacity: .7;
-}
-
-.footer__links{
-  display:flex ;
-  flex-direction: column;
-}
-
-.footer__links a{
-  margin-bottom: 15px;
-  font-weight: 700;
-  color: #133175;
 }
