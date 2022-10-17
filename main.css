@@ -4,25 +4,19 @@ body{
   margin: 0;
 }
 
-button{
-  transition: background-color .3s, ease-in;
-}
-
-button:hover{
-  background-color: #f6980c;
-  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-}
-
-
 /* Блок шапка */
 
 
 
 header{
+  position:sticky;
+  top: 0;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  z-index: 1;
 }
 
 .header__logo{
@@ -66,16 +60,11 @@ header a{
   
 }
 
-.about button{
+.about button {
   font-size: 18px;
   border-radius: 20px;
   padding: 20px 25px;
   margin-top: 20px;
-
-}
-
-.fa-solid {
-  padding-left: 5px;
 }
 
 .about__info{
@@ -92,38 +81,64 @@ button{
   cursor: pointer;
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
-
+  transition: background-color, color,  linear;
+  transition-duration: .3s;
 }
+
+
+button:hover{
+  color: #000;
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transform: scale(1.1);
+}
+
 
 .about__image{
-  width: 500px; 
+  display: flex;
+  width: 500px;
 }
 
-
-
 .about__sun-image{
+  position: absolute;
   width: 100px;
   height: 100px;
-  display:block;
-  
-}
-
-@keyframes rotation {
-  0%{
-    transform: rotate(0deg)
-  }
-  100%{
-    transform: rotate(360deg);
-  }
 }
 
 .about__sun-image{
-  animation: rotation 10s infinite linear;
+animation-name: rotate-sun;
+animation-timing-function: linear;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
+
+@keyframes rotate-sun{
+  0%{
+    transform: rotate(0deg);
+  }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+.fa-solid{
+  padding-left: 8px;
+}
+
+.animate__animated.animate__fadeInRight{
+  animation-duration: 2.3s;
+}
+
+.animate__animated.animate__fadeInLeft{
+  animation-duration: 2.3s;
+}
+
+
+
 
 
 /* Блок форма для отправки данных пользователя */
-
 
 .form__conteiner{
   width: 550px;
