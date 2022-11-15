@@ -275,11 +275,11 @@ animation-direction: alternate;
 .features__feedback{
   display: flex;
   align-items: center;
-  
+  justify-content: space-between;
 }
 
 .features__feedback-left{
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .features__feedback-left h2{
@@ -291,42 +291,13 @@ animation-direction: alternate;
   opacity: .7;
 }
 
-.about__sun-image{
-animation-name: rotate-sun;
-animation-timing-function: linear;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-}
-
-@keyframes rotate-sun{
-  0%{
-    transform: rotate(0deg);
-  }
-    100%{
-      transform: rotate(360deg);
-    }
-}
-
-.fa-solid{
-  padding-left: 8px;
-}
-
-.animate__animated.animate__fadeInRight{
-  animation-duration: 2.3s;
-}
-
-.animate__animated.animate__fadeInLeft{
-  animation-duration: 2.3s;
-}
-
 .features__feedback-right{
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .features__box{
-  padding: 30px 40px 25px 40px;
+  padding: 30px 40px 25px;
   color: #fff;
   border-radius: 25px;
 }
@@ -340,9 +311,17 @@ animation-direction: alternate;
 .features__savings-box{
   background-color: #dc5e26;
   box-shadow: 0px 6px 0px 0px rgba(221, 95, 38, 0.2);
-  margin-right:30px;
+  margin-right: 30px;
 }
 
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0px 0px rgba(29, 38, 58, 0.2);
+}
+
+.fas{
+  color: #ff7039;
+}
 /* Блок форма для отправки данных пользователя */
 
 
