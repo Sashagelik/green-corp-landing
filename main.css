@@ -4,6 +4,10 @@ body{
   margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bcf179a295209e4509897d6ab40ca5d51261a620
 /* Блок шапка */
 
 
@@ -33,11 +37,14 @@ header a{
   margin-right: 25px;
 }
 
+<<<<<<< HEAD
 
 /*БЛОК ИНФОРМАЦИЯ О ТОВАРЕ (Desktop)*/
 
 
 
+=======
+>>>>>>> bcf179a295209e4509897d6ab40ca5d51261a620
 .about{
   display: flex;
   justify-content: space-around;
@@ -56,7 +63,11 @@ header a{
 .about p{
   font-size: 18px;
   line-height: 30px;
+<<<<<<< HEAD
   opacity: 0.8;
+=======
+  opacity: .8;
+>>>>>>> bcf179a295209e4509897d6ab40ca5d51261a620
 }
 
 .about button {
@@ -102,6 +113,7 @@ button:hover{
   position: absolute;
   width: 100px;
   height: 100px;
+<<<<<<< HEAD
 
 }
 
@@ -292,6 +304,38 @@ animation-direction: alternate;
   font-size: 18px;
   line-height: 22px;
   opacity: .7;
+=======
+
+}
+
+.about__sun-image{
+animation-name: rotate-sun;
+animation-timing-function: linear;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+@keyframes rotate-sun{
+  0%{
+    transform: rotate(0deg);
+  }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
+.fa-solid{
+  padding-left: 8px;
+}
+
+.animate__animated.animate__fadeInRight{
+  animation-duration: 2.3s;
+}
+
+.animate__animated.animate__fadeInLeft{
+  animation-duration: 2.3s;
+>>>>>>> bcf179a295209e4509897d6ab40ca5d51261a620
 }
 
 .features__feedback-right{
@@ -426,5 +470,9 @@ footer{
   margin-bottom: 15px;
   font-weight: 700;
   color: #394f83;
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> bcf179a295209e4509897d6ab40ca5d51261a620
