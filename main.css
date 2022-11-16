@@ -84,10 +84,9 @@ button{
 
 
 button:hover{
-  color: #000;
-  background-color: #f6980c;
+  background: #f6980c;
   box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
-  transform: scale(1.1);
+  transition: 0.3s ease-in;
 }
 
 
@@ -160,9 +159,7 @@ animation-direction: alternate;
   .features{
     padding: 50px 10px;
   }
-  .cards{  
-   grid-template-columns: auto;
-  }
+  
 }
 
 /* Мобильные устройства */
@@ -219,6 +216,25 @@ animation-direction: alternate;
   .cards{ 
     grid-template-columns: auto;
   }
+  .features__feedback{
+    flex-direction: column;
+  }
+  .features__feedback-left{
+    padding: 0;
+  }
+  .features__feedback-left h2{
+    font-size: 36px;
+  }
+  .features__feedback-right{
+    flex-direction: column;
+  }
+  .features__feedback-right h3{ 
+    font-size: 36px;
+  }
+  .features__savings-box{
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 }
 
 /*СЕКЦИЯ ПРИИМУЩЕСТВА ПРОДУКЦИИ*/
@@ -250,7 +266,6 @@ animation-direction: alternate;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ad1714;
   width: 100px;
   height: 100px;
   font-size: 32px;
@@ -259,11 +274,15 @@ animation-direction: alternate;
   border-radius: 50%;
 }
 
-.fas{
+.red{
+  color: #ad1714;
+}
+
+.yellow{
   color: #ffb406;
 }
 
-.fa{
+.green{
   color: #22a030;
 }
 
