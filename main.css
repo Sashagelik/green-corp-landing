@@ -76,7 +76,7 @@ button{
   cursor: pointer;
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
-  transition: background-color, color,  linear;
+  transition: background-color, color,linear;
   transition-duration: .3s;
 }
 
@@ -116,7 +116,7 @@ animation-direction: alternate;
     }
 }
 
-.fa-solid{
+button i{
   padding-left: 8px;
 }
 
@@ -295,6 +295,7 @@ animation-direction: alternate;
   font-size: 15px;
   padding-left: 5px;
 }
+
 /* Блок форма для отправки данных пользователя */
 
 
@@ -428,10 +429,10 @@ footer{
       height: 75px;
   }
   
-  
 }
 
 /* Мобильные устройства */
+
 @media (max-width: 720px) {
   header {
       padding: 10px;
