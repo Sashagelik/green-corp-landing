@@ -17,4 +17,46 @@ function initIncreaseNumberAnimation() {
   increaseNumberAnimationStep (0, element, 5000) 
 }
 
-initIncreaseNumberAnimation();
+
+
+
+document.querySelector('#budget').addEventListener('change', function handleSelectChange(event) {
+  if (event.target.value === 'other') {
+    let formContainer = document.createElement('div')
+    formContainer.classList.add ('form__group')
+    formContainer.classList.add ('form__other-input')
+
+    let input = document.createElement ('input')
+    input.setAttribute ('placeholder', 'Введите ваш вариант')
+    input.setAttribute ('type', 'text')
+
+    formContainer.appendChild(input);
+    document.querySelector ('.form form').insertBefore(formContainer, document.querySelector('.form__submit'));
+  }
+  let otherInput = document.querySelector('.form__other-input')
+  if (event.target.value !== 'other' && Boolean (otherInput)) {
+     
+     document.querySelector('.form form').removeChild (otherInput)
+  }
+});
+
+function updateScroll () {
+    if (window.scrollY > 0){
+      const header = document.querySelector("header")
+      header.classList.add("header__scrolled")
+    } else {
+      const header = document.querySelector("header")
+      header.classList.remove("header__scrolled")
+    }
+    let countElementPosition = document.querySelector('.features__clients-count').offsetTop;
+    let windowBottomPosition = window.scrollY + window.innerHeight;  
+    if (windowBottomPosition >= countElementPosition && !animationInited ) {
+      animationInited = true
+      initIncreaseNumberAnimation()   
+    }
+};
+    let animationInited = false;
+
+    window.addEventListener('scroll', updateScroll);
+
+
